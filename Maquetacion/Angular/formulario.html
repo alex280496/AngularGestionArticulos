@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Maquetacion con html y css</title>
+        <meta charset="utf-8"/>
+        <!--cargar styles.css-->
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+        
+    </head>
+    <body>
+        <header id="header">
+            <!--logo-->
+            <div class="center">
+                <div id="logo">
+                    <img src="assets/images/angular.svg" class="app-logo" alt="logo"/>
+                    <span id="brand">
+                        <strong>Curso </strong> Angular
+                    </span>
+
+                </div>
+                <!-- menu-->
+                <nav id="menu">
+                        <ul>
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="formulario.html">Formulario</a>
+                            </li>
+                            <li>
+                                <a href="#"> Pagina 1</a>
+                            </li>
+                            <li>
+                                    <a href="#"> Pagina 2</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                    <!-- limpiar flotados-->
+                    <div class="clearfix"></div>
+                
+            </div>
+
+        </header>
+        
+
+        <div class="center">
+            <section id="content">
+               <h1 class="subheader">FORMULARIO</h1>
+               <div class="mid-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre </label>
+                        <input type="text" name="nombre"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input  type="text" name="apellido"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="bio"> Descripcion</label>
+                        <textarea name="bio"></textarea>
+
+                    </div>
+                    <div class="form-group radiobuttons">
+                        
+                        <input type="radio" name="genero" value="hombre"/>Hombre 
+                        <input type="radio" name="genero" value="mujer" /> Mujer 
+                        <input type="radio" name="genero" value="otro" /> Otro
+                    </div>
+                    <div class="clearfix"></div>
+                    <input type="submit" value="Enviar " class="btn btn-success"/>
+               </div>
+            </section>
+            
+            <aside id="sidebar">
+                <div id="nav-blog" class="sidebar-item">
+                    <h3>Puedes hacer esto</h3>
+                    <a href="#" class="btn btn-success">Crear articulo</a>
+                </div>
+
+                <div id="search" class="sidebar-item">
+                        <h3>Buscador</h3>
+                        <p>Encuentra el articulo que buscas</p>
+                        <form>
+                            <input type="text" name="search"/>
+                            <input type="submit" name="submit" value="Buscar" class="btn">
+                        </form>
+                    </div>
+            </aside>
+            <div class="clearfix">
+
+            </div>
+
+        </div>
+        <footer id="footer">
+            <div class="center">
+                <p> &copy; Master en Framework</p>
+            </div>
+
+        </footer>
+    </body>
+</html>

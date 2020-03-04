@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Maquetacion con html y css</title>
+        <meta charset="utf-8"/>
+        <!--cargar styles.css-->
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+        
+    </head>
+    <body>
+        <header id="header">
+            <!--logo-->
+            <div class="center">
+                <div id="logo">
+                    <img src="assets/images/logo1.svg" class="app-logo" alt="logo"/>
+                    <span id="brand">
+                        <strong>Curso </strong> React
+                    </span>
+
+                </div>
+                <!-- menu-->
+                <nav id="menu">
+                        <ul>
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="formulario.html">Formulario</a>
+                            </li>
+                            <li>
+                                <a href="#"> Pagina 1</a>
+                            </li>
+                            <li>
+                                    <a href="#"> Pagina 2</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                    <!-- limpiar flotados-->
+                    <div class="clearfix"></div>
+                
+            </div>
+
+        </header>
+        
+
+        <div class="center">
+            <section id="content">
+                
+                    <article class="article-item article-detail">
+                        <div class="image-wrap">
+                            <img src="assets/images/paisaje.jpg" alt="paisajes" width="900px" height="600px"/>
+                        </div>
+                        <h1 class="subheader">Articulo de Prueba</h1>
+                        <span class="date">
+                            hace 5 minutos
+                        </span>
+                    
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi sit amet erat euismod tincidunt gravida ac lectus. Proin ut orci sit amet ex semper lobortis. Integer pharetra placerat dui, sit amet dapibus urna vehicula quis. Donec quis arcu vitae tortor ullamcorper faucibus nec id odio. Maecenas eget vestibulum magna. Praesent hendrerit sed mi ac vulputate. Quisque aliquet, dui eu suscipit vestibulum, orci nunc facilisis odio, in maximus orci dolor eget erat.
+                        </p>
+                        <p>
+                            Phasellus dapibus sem in ultrices finibus. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce posuere malesuada arcu, ut maximus leo sollicitudin id. Ut commodo vel nulla quis scelerisque. Etiam fringilla accumsan mauris. Phasellus non eros est. Nam diam elit, lobortis vel nunc sed, viverra finibus elit. Donec vehicula ante aliquam, dictum nibh vel, mattis sem. Etiam faucibus ultricies malesuada. Donec molestie nunc sed dui fermentum, nec varius libero blandit.
+                        </p>
+                        <p>
+                            Ut eget est finibus, placerat magna at, consequat felis. Etiam vulputate lorem nisi, id rutrum arcu tristique sed. Suspendisse mattis rutrum cursus. Praesent fermentum dignissim consectetur. Aliquam aliquet, eros eu gravida suscipit, ligula arcu ullamcorper justo, ac facilisis ex nulla finibus nunc. Quisque ut sapien eu turpis dignissim feugiat. Duis tristique cursus nibh non tristique. Integer ac sagittis tortor, in rhoncus magna. Donec fermentum arcu felis. Integer ut dictum purus. Aliquam in convallis nunc.
+                        </p>
+                        <div class="clearfix"></div>
+                    </article>
+                    
+               
+            </section>
+            
+            <aside id="sidebar">
+                <div id="nav-blog" class="sidebar-item">
+                    <h3>Puedes hacer esto</h3>
+                    <a href="#" class="btn btn-success">Crear articulo</a>
+                </div>
+
+                <div id="search" class="sidebar-item">
+                        <h3>Buscador</h3>
+                        <p>Encuentra el articulo que buscas</p>
+                        <form>
+                            <input type="text" name="search"/>
+                            <input type="submit" name="submit" value="Buscar" class="btn">
+                        </form>
+                    </div>
+            </aside>
+            <div class="clearfix">
+
+            </div>
+
+        </div>
+        <footer id="footer">
+            <div class="center">
+                <p> &copy; Master en Framework</p>
+            </div>
+
+        </footer>
+    </body>
+</html>

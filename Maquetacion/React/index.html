@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Maquetacion con html y css</title>
+        <meta charset="utf-8"/>
+        <!--cargar styles.css-->
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+        
+    </head>
+    <body>
+        <header id="header">
+            <!--logo-->
+            <div class="center">
+                <div id="logo">
+                    <img src="assets/images/logo1.svg" class="app-logo" alt="logo"/>
+                    <span id="brand">
+                        <strong>Curso </strong> React
+                    </span>
+
+                </div>
+                <!-- menu-->
+                <nav id="menu">
+                        <ul>
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="formulario.html">Formulario</a>
+                            </li>
+                            <li>
+                                <a href="#"> Pagina 1</a>
+                            </li>
+                            <li>
+                                    <a href="#"> Pagina 2</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                    <!-- limpiar flotados-->
+                    <div class="clearfix"></div>
+                
+            </div>
+
+        </header>
+        <div class="slider-big" id="slider">
+            <h1>Bienvenido al mejor curso framework de victor robles </h1>
+            <a href="#" class="btn-white">IR AL BLOG </a>
+        </div>
+
+        <div class="center">
+            <section id="content">
+                <h2 class="subheader">Ultimos Articulos</h2>
+                <script type="text/javascript">
+                    window.addEventListener("load",function(){
+                    var template=document.getElementById("article-template");
+                    
+
+                    var articles=document.getElementById("articles");
+                    for(i=0;i<=5;i++){
+                        var clonado=template.cloneNode(true);
+                        clonado.removeAttribute("id");
+                        var h2=clonado.getElementsByTagName("h2")[0];
+                        h2.innerHTML=h2.textContent +' '+i;
+                        articles.appendChild(clonado);
+                    }
+                });
+                    
+                 </script>
+                <!-- listado de articulos-->
+                <div id=articles>
+                    <article class="article-item" id="article-template">
+                        <div class="image-wrap">
+                            <img src="assets/images/paisaje.jpg" alt="paisajes" width="900px" height="600px"/>
+                        </div>
+                        <h2>Articulo de Prueba</h2>
+                        <span class="date">
+                            hace 5 minutos
+                        </span>
+                        <a href="#">Leer mas</a>
+                        <div class="clearfix"></div>
+                    </article>
+                    <!--aniadir articulos via js-->
+                </div>
+            </section>
+            
+            <aside id="sidebar">
+                <div id="nav-blog" class="sidebar-item">
+                    <h3>Puedes hacer esto</h3>
+                    <a href="#" class="btn btn-success">Crear articulo</a>
+                </div>
+
+                <div id="search" class="sidebar-item">
+                        <h3>Buscador</h3>
+                        <p>Encuentra el articulo que buscas</p>
+                        <form>
+                            <input type="text" name="search"/>
+                            <input type="submit" name="submit" value="Buscar" class="btn">
+                        </form>
+                    </div>
+            </aside>
+            <div class="clearfix">
+
+            </div>
+
+        </div>
+        <footer id="footer">
+            <div class="center">
+                <p> &copy; Master en Framework</p>
+            </div>
+
+        </footer>
+    </body>
+</html>
